@@ -1,0 +1,35 @@
+.sca_back-area {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    
+    overflow: hidden;
+    display: none;
+    z-index: 3000;
+    top: 0;
+    left: 0;
+    opacity: 0.95;
+
+    background: white;
+}
+
+.sca_msg-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    border: 1px solid lightgray;
+    border-radius: 5px;
+
+    padding: 50px;
+
+    display: grid;
+    grid-template-rows: 98% auto;
+}
+
+.sca_msg-print {
+    margin-bottom: 10px;
+    font-size: large;
+}
