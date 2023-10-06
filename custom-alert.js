@@ -1,3 +1,13 @@
+/*
+* 알림 화면 출력
+* 화면을 전체 덮으며 확인 버튼 클릭 시 사라짐
+* 
+* @param
+* - msg
+* 출력될 메시지, 모바일 기준 약 75자를 한 화면에서 보여주고 그 이상 넘어갈 경우 스크롤 추가
+* 메시지가 없을 경우 화면 닫기
+*/
+
 const show_custom_alert = (msg) => {
     const scaCustomAlertView = document.getElementById("sca_custom_alert_view");
     const scaMsgPrint = document.getElementById("sca_msg-print");
@@ -11,6 +21,11 @@ const show_custom_alert = (msg) => {
     }
 }
 
+
+/*
+* 알림창 생성
+* 페이지 시작 시 알림창을 body 태그 아래에 생성
+*/
 const make_custom_alert = () => {
     const backArea = document.createElement("div");
     backArea.className = "sca_back-area";
