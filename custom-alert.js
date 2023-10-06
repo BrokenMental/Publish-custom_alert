@@ -31,7 +31,7 @@ const make_custom_alert = () => {
     msgArea.appendChild(BtnArea);
 
     const BtnClose = document.createElement('input');
-    BtnClose.className = 'sca_btn-close';
+    BtnClose.className = 'btn sca_btn-close';
     BtnClose.id = 'sca_btn-close';
     BtnClose.type = 'button';
     BtnClose.value = '확인';

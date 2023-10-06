@@ -23,13 +23,27 @@
     border: 1px solid lightgray;
     border-radius: 5px;
 
-    padding: 50px;
+    padding: 16px;
 
     display: grid;
-    grid-template-rows: 98% auto;
+    grid-template-rows: auto 30px;
 }
 
 .sca_msg-print {
     margin-bottom: 10px;
     font-size: large;
+
+    min-width: 240px;
+    max-height: 120px;
+    overflow: auto;
+
+    padding: 8px;
+}
+
+.sca_btn-close {
+    border: 0.5px solid lightgrey;
+    min-width: 60px;
+    min-height: 30px;
+    font-size: 16px;
+    background: #ffffff;
 }
